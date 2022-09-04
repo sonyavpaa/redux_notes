@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.notesContainer {
+  margin-top: 3em;
+  width: 90vw;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 30% 70%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.left {
+  grid-area: left;
+}
+
+.left div {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.left label {
+  width: 4em;
+}
+
+.right {
+  grid-area: right;
+}
+
+.noteList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+  width: 20em;
+  border: 1px solid red;
+  padding: 0.5em;
+  margin: 1em;
+  /* overflow-x: scroll; */
+}
+
+.note p {
+  width: 100%;
+  height: 10em;
+  line-break: anywhere;
+}
+
+button {
+  font-family: "Courier New", Courier, monospace;
+}
