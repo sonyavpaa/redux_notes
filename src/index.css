@@ -49,10 +49,9 @@ code {
 
 .note {
   width: 20em;
-  border: 1px solid red;
+  border: 1px solid rgb(230, 133, 228);
   padding: 0.5em;
   margin: 1em;
-  /* overflow-x: scroll; */
 }
 
 .note p {
