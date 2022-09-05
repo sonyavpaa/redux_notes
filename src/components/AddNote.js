@@ -5,7 +5,6 @@ import { addTodo } from "../store/todoSlice";
 
 function AddNote() {
   const [form, setForm] = useState({
-    id: 0,
     title: "",
     text: "",
   });
