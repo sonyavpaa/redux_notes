@@ -1,6 +1,5 @@
 import React from "react";
 import Note from "./Note";
-import { connect } from "react-redux";
 
 import { useSelector, useDispatch } from "react-redux";
 
@@ -24,10 +23,4 @@ function NoteList() {
   );
 }
 
-function mapStateToProps(state) {
-  return {
-    notes: state,
-  };
-}
-
-export default connect(mapStateToProps)(NoteList);
+export default NoteList;
